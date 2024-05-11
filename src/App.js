@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Sidebar from './Sidebar';
+import MainContent from './MainContent';
+import Footer from './Footer';
 import './App.css';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('Configurar Reglas');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="app-header">
+        <h1>Sistema Antifraude</h1>
       </header>
+      <div className="content-area">
+        <Sidebar activeSection={activeSection} setActiveSection={setActiveSection} />
+        <MainContent activeSection={activeSection} />
+      </div>
+      <Footer />
     </div>
   );
 }
