@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProceedModal.css'; // Asegúrate de crear y estilizar este archivo CSS
+import './ProceedModal.css';
 
 function ProceedModal({ isOpen, onClose, onConfirm, transaction }) {
   if (!isOpen) return null;

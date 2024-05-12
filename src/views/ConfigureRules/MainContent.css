@@ -2,7 +2,7 @@
     padding: 20px;
     background: #f8f9fa;
     width: 100%;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box;
   }
   
   .rules-table {

@@ -28,12 +28,12 @@
   }
   
   .button-notificar {
-    background-color: #f0ad4e; /* Bootstrap warning color */
+    background-color: #f0ad4e;
     color: white;
   }
   
   .button-proceder {
-    background-color: #5cb85c; /* Bootstrap success color */
+    background-color: #5cb85c;
     color: white;
   }
   

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import MainContent from './views/ConfigureRules/MainContent';
-import AlertsContent from './views/Alerts/AlertsContent'; // Importa el componente de alertas
+import AlertsContent from './views/Alerts/AlertsContent';
+import ReportsContent from './views/Reports/ReportsContent';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -14,8 +15,10 @@ function App() {
         return <MainContent activeSection={activeSection} />;
       case 'Alertas':
         return <AlertsContent />;
+      case 'Reportes':
+        return <ReportsContent />;
       default:
-        return <MainContent />; // Asegúrate de tener un caso por defecto
+        return <MainContent />;
     }
   };
 

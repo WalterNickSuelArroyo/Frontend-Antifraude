@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      © 2024 Mi Dashboard. Todos los derechos reservados.
+      © 2024 Sistema Antifraude. Todos los derechos reservados.
     </footer>
   );
 }

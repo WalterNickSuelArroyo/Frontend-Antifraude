@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import NotificationModal from './modals/NotificationModal'; // Importa el componente del modal de notificación
-import ProceedModal from './modals/ProceedModal'; // Importa el componente del modal de proceder
+import NotificationModal from './modals/NotificationModal';
+import ProceedModal from './modals/ProceedModal';
 import './AlertsContent.css';
 
 const AlertsContent = () => {

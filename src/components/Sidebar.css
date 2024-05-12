@@ -16,7 +16,7 @@
     border-radius: 5px;
     cursor: pointer;
     text-align: left;
-    transition: background-color 0.3s ease; /* Suaviza la transición del color de fondo */
+    transition: background-color 0.3s ease;
   }
   
   .sidebar-item:hover {
@@ -24,7 +24,7 @@
   }
   
   .sidebar-item.active {
-    background-color: #2c786c; /* Un color más oscuro para el item activo */
+    background-color: #2c786c;
     font-weight: bold;
   }
   

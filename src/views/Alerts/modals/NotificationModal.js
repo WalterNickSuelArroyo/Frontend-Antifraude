@@ -1,5 +1,5 @@
 import React from 'react';
-import './NotificationModal.css'; // Asegúrate de crear y estilizar este archivo CSS
+import './NotificationModal.css';
 
 function NotificationModal({ isOpen, onClose, onConfirm, transaction }) {
   if (!isOpen) return null;

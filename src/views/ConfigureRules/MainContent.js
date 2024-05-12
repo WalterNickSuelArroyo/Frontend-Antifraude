@@ -3,7 +3,7 @@ import './MainContent.css';
 import IPModal from './modals/IPModal';
 import TimeModal from './modals/TimeModal';
 import AmountModal from './modals/AmountModal';
-import TransactionsModal from './modals/TransactionsModal';  // Asegúrate de importar el componente del modal para las transacciones
+import TransactionsModal from './modals/TransactionsModal';
 
 function MainContent({ activeSection }) {
   const [showIPModal, setShowIPModal] = useState(false);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TimeModal.css'; // Asegúrate de crear y estilizar este archivo CSS
+import './TimeModal.css';
 
 function TimeModal({ isOpen, onClose, onSave, currentHours }) {
   const [hours, setHours] = useState(currentHours);

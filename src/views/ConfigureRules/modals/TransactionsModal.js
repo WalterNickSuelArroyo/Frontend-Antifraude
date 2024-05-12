@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TransactionsModal.css'; // Asegúrate de crear y estilizar este archivo CSS
+import './TransactionsModal.css';
 
 function TransactionsModal({ isOpen, onClose, onSave, currentTransactions }) {
   const [transactions, setTransactions] = useState(currentTransactions);

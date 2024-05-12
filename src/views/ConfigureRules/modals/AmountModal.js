@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './AmountModal.css';  // Asegúrate de crear y estilizar este archivo CSS
+import './AmountModal.css';
 
 function AmountModal({ isOpen, onClose, onSave, currentAmount }) {
   const [amount, setAmount] = useState(currentAmount);
