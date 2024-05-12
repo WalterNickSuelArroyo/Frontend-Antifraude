@@ -1,0 +1,39 @@
+.alerts-content {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f8f8f8;
+  }
+  
+  .button-notificar, .button-proceder {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-notificar {
+    background-color: #f0ad4e; /* Bootstrap warning color */
+    color: white;
+  }
+  
+  .button-proceder {
+    background-color: #5cb85c; /* Bootstrap success color */
+    color: white;
+  }
+  

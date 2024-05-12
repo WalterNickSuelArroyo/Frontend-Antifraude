@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './MainContent.css';
-import IPModal from './IPModal';
-import TimeModal from './TimeModal';
-import AmountModal from './AmountModal';
-import TransactionsModal from './TransactionsModal';  // Asegúrate de importar el componente del modal para las transacciones
+import IPModal from './modals/IPModal';
+import TimeModal from './modals/TimeModal';
+import AmountModal from './modals/AmountModal';
+import TransactionsModal from './modals/TransactionsModal';  // Asegúrate de importar el componente del modal para las transacciones
 
 function MainContent({ activeSection }) {
   const [showIPModal, setShowIPModal] = useState(false);

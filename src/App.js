@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
-import Sidebar from './Sidebar';
-import MainContent from './MainContent';
-import Footer from './Footer';
+import Sidebar from './components/Sidebar';
+import MainContent from './views/ConfigureRules/MainContent';
+import AlertsContent from './views/Alerts/AlertsContent'; // Importa el componente de alertas
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('Configurar Reglas');
+
+  const renderContent = () => {
+    switch (activeSection) {
+      case 'Configurar Reglas':
+        return <MainContent activeSection={activeSection} />;
+      case 'Alertas':
+        return <AlertsContent />;
+      default:
+        return <MainContent />; // Asegúrate de tener un caso por defecto
+    }
+  };
 
   return (
     <div className="app">
@@ -14,7 +26,7 @@ function App() {
       </header>
       <div className="content-area">
         <Sidebar activeSection={activeSection} setActiveSection={setActiveSection} />
-        <MainContent activeSection={activeSection} />
+        {renderContent()}
       </div>
       <Footer />
     </div>
